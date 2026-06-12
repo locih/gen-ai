@@ -7,6 +7,11 @@ dist/
 wheels/
 *.egg-info
 chroma_db
+chroma_a
+chroma_b
+bm25_a.json
+bm25_b.json
+eval_results.json
 # Virtual environments
 .venv
 

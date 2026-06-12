@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "type": "прямой",
+    "question": "Сколько story points команда взяла на тёмную тему в спринте 42?",
+    "gold_sources": ["retro_sprint_42"],
+    "note": "в тексте: «тёмная тема — 13 SP»"
+  },
+  {
+    "id": 2,
+    "type": "синоним",
+    "question": "Как долго приложение запускается на бюджетном Android-холодном старте?",
+    "gold_sources": ["perf_audit_android"],
+    "note": "в документе «медленный запуск», «cold start» — не слово «запускается» дословно"
+  },
+  {
+    "id": 3,
+    "type": "точный артикул",
+    "question": "Какой код носил A/B-тест цены премиум-подписки?",
+    "gold_sources": ["ab_test_premium"],
+    "note": "EXP-204"
+  },
+  {
+    "id": 4,
+    "type": "multi-hop",
+    "question": "Как реклама связана с оттоком в первую неделю после установки?",
+    "gold_sources": ["research_ads_churn", "onboarding_funnel"],
+    "note": "сложный: 41% uninstall + критическая первая неделя онбординга"
+  },
+  {
+    "id": 5,
+    "type": "позитив",
+    "question": "Кого из пользователей поддержка похвалили за быстрый возврат денег?",
+    "gold_sources": ["support_q1_escalations"],
+    "note": "Марина, ESC-8842, 47 минут"
+  },
+  {
+    "id": 6,
+    "type": "перефраз",
+    "question": "Где на телефоне хранится офлайн-кэш операций?",
+    "gold_sources": ["adr_sqlite_cache"],
+    "note": "в тексте SQLite WAL, не слово «офлайн-кэш» в каждом абзаце"
+  },
+  {
+    "id": 7,
+    "type": "синоним",
+    "question": "Какой процент пользователей потерял данные в январском сбое синхронизации?",
+    "gold_sources": ["postmortem_sync_jan"],
+    "note": "SYNC-17, 12% — формулировка «сбой синхронизации» vs «инцидент»"
+  },
+  {
+    "id": 8,
+    "type": "точный артикул",
+    "question": "Какой формат даты требуется для импорта из Excel?",
+    "gold_sources": ["spec_excel_import"],
+    "note": "YYYY-MM-DD"
+  },
+  {
+    "id": 9,
+    "type": "multi-hop",
+    "question": "Как 152-ФЗ связан с хранением биометрии и локальной базой на устройстве?",
+    "gold_sources": ["security_biometrics", "adr_sqlite_cache"],
+    "note": "сложный: регуляторика + SQLite локально"
+  },
+  {
+    "id": 10,
+    "type": "прямой",
+    "question": "Какой лимит размера SQLite-базы на устройстве?",
+    "gold_sources": ["adr_sqlite_cache"],
+    "note": "50 МБ"
+  },
+  {
+    "id": 11,
+    "type": "перефраз",
+    "question": "Какие два backend-компонента сломались в январском инциденте синхронизации?",
+    "gold_sources": ["postmortem_sync_jan"],
+    "note": "API Gateway и Cloud Sync Worker"
+  }
+]
