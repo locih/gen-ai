@@ -1,0 +1,887 @@
+[
+  {
+    "review_id": "R001",
+    "author_name": "Сергей",
+    "rating": 1,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 5,
+        "quote": "Приложение просто ужасно тормозит на старте, вчера запускал три минуты — экран висел белый."
+      },
+      {
+        "category": "bug",
+        "severity": 5,
+        "quote": "Потом ещё и вылетело, когда я пытался сохранить новый доход."
+      }
+    ],
+    "review_date": "2024-11-15"
+  },
+  {
+    "review_id": "R002",
+    "author_name": "Екатерина",
+    "rating": 2,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 4,
+        "quote": "При переходе между категориями всё подтормаживает, а иногда приложение падает без предупреждения."
+      }
+    ],
+    "review_date": "2024-12-02"
+  },
+  {
+    "review_id": "R003",
+    "author_name": "Дмитрий",
+    "rating": 3,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 3,
+        "quote": "Медленный запуск — это бич приложения. После обновления стало чуть лучше, но иногда всё ещё висит по 15 секунд."
+      }
+    ],
+    "review_date": "2025-01-20"
+  },
+  {
+    "review_id": "R004",
+    "author_name": "Ольга",
+    "rating": 1,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 5,
+        "quote": "Сплошные вылеты при добавлении регулярных трат. Ввела сумму, нажала «сохранить» — и выкинуло на рабочий стол."
+      }
+    ],
+    "review_date": "2025-02-14"
+  },
+  {
+    "review_id": "R005",
+    "author_name": "Иван",
+    "rating": 4,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 2,
+        "quote": "Лаги случаются только в разделе статистики, если данных много."
+      },
+      {
+        "category": "bug",
+        "severity": 2,
+        "quote": "Запуск у меня быстрый, секунд 5, но на старом айфоне друг жаловался на тормоза."
+      }
+    ],
+    "review_date": "2025-03-10"
+  },
+  {
+    "review_id": "R006",
+    "author_name": "Анастасия",
+    "rating": 2,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 5,
+        "quote": "Вылетает каждый раз, когда пытаюсь открыть историю за прошлый месяц."
+      },
+      {
+        "category": "bug",
+        "severity": 3,
+        "quote": "Медленный запуск тоже бесит, минуту жду."
+      }
+    ],
+    "review_date": "2025-04-25"
+  },
+  {
+    "review_id": "R007",
+    "author_name": "Максим",
+    "rating": 5,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 1,
+        "quote": "У меня всё летает, ни разу не вылетало."
+      }
+    ],
+    "review_date": "2025-06-18"
+  },
+  {
+    "review_id": "R008",
+    "author_name": "Виктория",
+    "rating": 1,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 5,
+        "quote": "Вылеты происходят раз в пять минут, особенно если быстро свайпать."
+      },
+      {
+        "category": "bug",
+        "severity": 4,
+        "quote": "Медленный запуск добивает, жду по 20 секунд."
+      }
+    ],
+    "review_date": "2025-08-03"
+  },
+  {
+    "review_id": "R009",
+    "author_name": "Павел",
+    "rating": 3,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 2,
+        "quote": "медленный запуск остался."
+      }
+    ],
+    "review_date": "2025-10-11"
+  },
+  {
+    "review_id": "R010",
+    "author_name": "Юлия",
+    "rating": 2,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 5,
+        "quote": "Вылеты при загрузке отчётов — это катастрофа. Хотела проанализировать расходы за год, а приложение упало три раза подряд."
+      },
+      {
+        "category": "bug",
+        "severity": 3,
+        "quote": "Медленный запуск только усугубляет ситуацию."
+      }
+    ],
+    "review_date": "2026-01-07"
+  },
+  {
+    "review_id": "R011",
+    "author_name": "Тимур",
+    "rating": 2,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "ads",
+        "severity": 4,
+        "quote": "Задолбали эти баннеры на весь экран после каждого добавления расхода."
+      }
+    ],
+    "review_date": "2025-03-12"
+  },
+  {
+    "review_id": "R012",
+    "author_name": "Екатерина",
+    "rating": 5,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "feature_request",
+        "severity": 1,
+        "quote": "Наконец-то нашла приложение без дурацких баннеров в платной версии."
+      }
+    ],
+    "review_date": "2024-11-05"
+  },
+  {
+    "review_id": "R013",
+    "author_name": "Григорий",
+    "rating": 1,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "ads",
+        "severity": 5,
+        "quote": "Самая бесячая реклама, которую я видел — баннеры вылезают даже в момент, когда я печатаю сумму."
+      }
+    ],
+    "review_date": "2026-01-20"
+  },
+  {
+    "review_id": "R014",
+    "author_name": "Алёна",
+    "rating": 4,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "ads",
+        "severity": 3,
+        "quote": "Но бесит, что без неё в бесплатной версии баннеры перекрывают таблицу с доходами."
+      }
+    ],
+    "review_date": "2025-07-30"
+  },
+  {
+    "review_id": "R015",
+    "author_name": "Максим",
+    "rating": 3,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "billing",
+        "severity": 4,
+        "quote": "после обновления начала вылетать платёжка за подписку, хотя я уже оплатил."
+      }
+    ],
+    "review_date": "2024-09-18"
+  },
+  {
+    "review_id": "R016",
+    "author_name": "Полина",
+    "rating": 2,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "ads",
+        "severity": 4,
+        "quote": "Баннеры занимают треть экрана, а под ними кнопки еле видны."
+      },
+      {
+        "category": "billing",
+        "severity": 2,
+        "quote": "499 рублей за год — дороговато для учёта расходов."
+      }
+    ],
+    "review_date": "2025-12-01"
+  },
+  {
+    "review_id": "R017",
+    "author_name": "Денис",
+    "rating": 5,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "feature_request",
+        "severity": 1,
+        "quote": "Купил премиум после трёх дней мучений с рекламой — и не жалею."
+      }
+    ],
+    "review_date": "2026-02-14"
+  },
+  {
+    "review_id": "R018",
+    "author_name": "Зоя",
+    "rating": 1,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "ads",
+        "severity": 5,
+        "quote": "Баннеры выскакивают каждые 2 минуты, подписка навязывается на каждом шагу."
+      },
+      {
+        "category": "billing",
+        "severity": 5,
+        "quote": "Один раз случайно оформил пробный период — забыл отменить, сняли 800 рублей."
+      }
+    ],
+    "review_date": "2025-05-22"
+  },
+  {
+    "review_id": "R019",
+    "author_name": "Илья",
+    "rating": 3,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "ads",
+        "severity": 2,
+        "quote": "реклама бесит меньше, чем предложение купить подписку после каждого отчёта."
+      }
+    ],
+    "review_date": "2024-06-10"
+  },
+  {
+    "review_id": "R020",
+    "author_name": "Ольга",
+    "rating": 4,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "billing",
+        "severity": 2,
+        "quote": "для студентов могла бы быть скидка, 300 рублей на учёт расходов всё-таки многовато."
+      }
+    ],
+    "review_date": "2026-04-03"
+  },
+  {
+    "review_id": "R021",
+    "author_name": "Ольга",
+    "rating": 2,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 4,
+        "quote": "Синхронизация между телефоном и планшетом работает через раз — то данные приходят, то нет."
+      },
+      {
+        "category": "bug",
+        "severity": 3,
+        "quote": "И бэкап в облаке какой-то странный, не пойму, восстановится ли всё после сброса."
+      }
+    ],
+    "review_date": "2025-01-15"
+  },
+  {
+    "review_id": "R022",
+    "author_name": "Дмитрий",
+    "rating": 4,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 3,
+        "quote": "автоматическая синхронизация иногда глючит"
+      },
+      {
+        "category": "bug",
+        "severity": 4,
+        "quote": "Один раз потерял пару транзакций из-за сбоя, пришлось вводить заново."
+      }
+    ],
+    "review_date": "2024-11-02"
+  },
+  {
+    "review_id": "R023",
+    "author_name": "Наталья",
+    "rating": 1,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 5,
+        "quote": "После обновления приложение сбросило все мои данные за полгода."
+      },
+      {
+        "category": "bug",
+        "severity": 5,
+        "quote": "Бэкап не помог — оказывается, он не создавался автоматически, хотя в настройках стояла галочка."
+      }
+    ],
+    "review_date": "2025-06-20"
+  },
+  {
+    "review_id": "R024",
+    "author_name": "Иван",
+    "rating": 5,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "feature_request",
+        "severity": 1,
+        "quote": "Синхронизация через Google Диск работает без нареканий"
+      }
+    ],
+    "review_date": "2024-09-12"
+  },
+  {
+    "review_id": "R025",
+    "author_name": "Екатерина",
+    "rating": 3,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 3,
+        "quote": "Синхронизация с iPad иногда отваливается, приходится перезаходить в аккаунт."
+      },
+      {
+        "category": "bug",
+        "severity": 3,
+        "quote": "после восстановления из бэкапа дублируются категории"
+      }
+    ],
+    "review_date": "2026-02-05"
+  },
+  {
+    "review_id": "R026",
+    "author_name": "Сергей",
+    "rating": 2,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 5,
+        "quote": "Приложение зависло при синхронизации, и после перезапуска часть записей исчезла."
+      },
+      {
+        "category": "bug",
+        "severity": 4,
+        "quote": "Бэкап в облаке не обновлялся неделю"
+      }
+    ],
+    "review_date": "2025-08-10"
+  },
+  {
+    "review_id": "R027",
+    "author_name": "Анна",
+    "rating": 4,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "ux",
+        "severity": 1,
+        "quote": "только иногда задерживается на пару минут"
+      }
+    ],
+    "review_date": "2024-12-24"
+  },
+  {
+    "review_id": "R028",
+    "author_name": "Максим",
+    "rating": 1,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 5,
+        "quote": "Полностью потерял данные за три месяца из-за того, что приложение не синхронизировало бэкап с облаком."
+      },
+      {
+        "category": "ux",
+        "severity": 4,
+        "quote": "В поддержке сказали, что нужно было вручную делать экспорт."
+      }
+    ],
+    "review_date": "2026-01-03"
+  },
+  {
+    "review_id": "R029",
+    "author_name": "Татьяна",
+    "rating": 5,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "feature_request",
+        "severity": 1,
+        "quote": "Синхронизация с ноутбуком через веб-версию работает отлично."
+      }
+    ],
+    "review_date": "2025-04-18"
+  },
+  {
+    "review_id": "R030",
+    "author_name": "Павел",
+    "rating": 3,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 2,
+        "quote": "Синхронизация через Wi-Fi иногда обрывается, приходится ждать."
+      },
+      {
+        "category": "bug",
+        "severity": 4,
+        "quote": "А бэкап вообще подвёл — в прошлом месяце пришлось восстанавливать данные из старого файла, так как новый не создался из-за ошибки."
+      }
+    ],
+    "review_date": "2024-10-08"
+  },
+  {
+    "review_id": "R031",
+    "author_name": "Екатерина",
+    "rating": 4,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "ux",
+        "severity": 3,
+        "quote": "категории расходов какие-то нелогичные — приходится вручную редактировать, чтобы под свои нужды подогнать"
+      },
+      {
+        "category": "ux",
+        "severity": 2,
+        "quote": "Если бы ещё тёмную тему сделали по-настоящему тёмной, а не серой, было бы идеально"
+      }
+    ],
+    "review_date": "2025-02-14"
+  },
+  {
+    "review_id": "R032",
+    "author_name": "Михаил",
+    "rating": 2,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 4,
+        "quote": "Тёмная тема работает через раз, иногда сама по себе включается среди дня, а ночью остаётся светлой — бесит"
+      },
+      {
+        "category": "content",
+        "severity": 3,
+        "quote": "Категории какие-то странные, я не могу найти подходящую для подписки на стриминг, приходится создавать свою"
+      },
+      {
+        "category": "ux",
+        "severity": 2,
+        "quote": "По дизайну — слишком много пустого места, информация нечитаемая"
+      }
+    ],
+    "review_date": "2025-07-22"
+  },
+  {
+    "review_id": "R033",
+    "author_name": "Алина",
+    "rating": 5,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "feature_request",
+        "severity": 1,
+        "quote": "хотелось бы больше пресетов для мелких покупок вроде кофе или проезда"
+      }
+    ],
+    "review_date": "2024-11-05"
+  },
+  {
+    "review_id": "R034",
+    "author_name": "Игорь",
+    "rating": 1,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "ux",
+        "severity": 5,
+        "quote": "Дизайн убогий, кнопки мелкие, на планшете вообще неудобно пользоваться"
+      },
+      {
+        "category": "ux",
+        "severity": 4,
+        "quote": "Тёмная тема превращает текст в серую кашу, ничего не разобрать"
+      },
+      {
+        "category": "ux",
+        "severity": 4,
+        "quote": "Категории только навязчивые, свои добавить — целый квест"
+      }
+    ],
+    "review_date": "2026-01-18"
+  },
+  {
+    "review_id": "R035",
+    "author_name": "Ольга",
+    "rating": 3,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 3,
+        "quote": "Тёмная тема красивая, но в некоторых разделах она не применяется, например в настройках — белый фон выжигает глаза"
+      },
+      {
+        "category": "content",
+        "severity": 2,
+        "quote": "Категории скудные, нет разделения на «лекарства» и «аптеку», приходится выкручиваться"
+      },
+      {
+        "category": "ux",
+        "severity": 2,
+        "quote": "Дизайн в целом приятный, но шрифты маловаты"
+      }
+    ],
+    "review_date": "2025-05-30"
+  },
+  {
+    "review_id": "R036",
+    "author_name": "Дмитрий",
+    "rating": 5,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "content",
+        "severity": 1,
+        "quote": "базовый набор странный, например «здоровье» и «спорт» в одной куче"
+      }
+    ],
+    "review_date": "2024-09-12"
+  },
+  {
+    "review_id": "R037",
+    "author_name": "Светлана",
+    "rating": 2,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "ux",
+        "severity": 3,
+        "quote": "Дизайн перегружен, анимации тормозят на старом телефоне"
+      },
+      {
+        "category": "bug",
+        "severity": 3,
+        "quote": "Тёмная тема не синхронизируется с системной, приходится лезть в настройки"
+      },
+      {
+        "category": "ux",
+        "severity": 4,
+        "quote": "Категории расходов совсем не интуитивные — я запуталась, куда записать коммуналку, думала в «дом», а это оказалось в «прочее»"
+      }
+    ],
+    "review_date": "2025-10-03"
+  },
+  {
+    "review_id": "R038",
+    "author_name": "Павел",
+    "rating": 4,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 3,
+        "quote": "тёмная тема иногда глючит при переключении между вкладками — мелькает белый экран"
+      },
+      {
+        "category": "feature_request",
+        "severity": 1,
+        "quote": "для редких доходов типа продажи вещей приходится создавать свои"
+      }
+    ],
+    "review_date": "2026-03-07"
+  },
+  {
+    "review_id": "R039",
+    "author_name": "Наталья",
+    "rating": 3,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 3,
+        "quote": "Тёмная тема красивая, но почему-то на главном экране она тёмная, а в графиках — светлая, выглядит нелогично"
+      },
+      {
+        "category": "ux",
+        "severity": 3,
+        "quote": "Категории переименовывать можно, но их нельзя удалять, только скрывать — бесит этот мусор"
+      },
+      {
+        "category": "feature_request",
+        "severity": 1,
+        "quote": "хотелось бы больше значков"
+      }
+    ],
+    "review_date": "2024-12-25"
+  },
+  {
+    "review_id": "R040",
+    "author_name": "Артём",
+    "rating": 1,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "ux",
+        "severity": 5,
+        "quote": "Дизайн устаревший, как из 2010-х, тёмная тема просто серый фон с чёрным текстом — глаза ломаются"
+      },
+      {
+        "category": "content",
+        "severity": 4,
+        "quote": "Категории вообще бестолковые: «еда» и «продукты» это одно и то же, зачем два пункта?"
+      }
+    ],
+    "review_date": "2025-08-19"
+  },
+  {
+    "review_id": "R041",
+    "author_name": "Иван",
+    "rating": 2,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 4,
+        "quote": "Пытался импортировать свои расходы из Excel, но приложение выдало ошибку формата."
+      },
+      {
+        "category": "billing",
+        "severity": 5,
+        "quote": "Вернуть деньги за премиум не дают, говорят, что возврат не предусмотрен, хотя я только что оформил подписку."
+      },
+      {
+        "category": "ux",
+        "severity": 3,
+        "quote": "В поддержку писал два дня, ответили шаблоном, что нужно пересохранить файл."
+      }
+    ],
+    "review_date": "2025-02-14"
+  },
+  {
+    "review_id": "R042",
+    "author_name": "Екатерина",
+    "rating": 4,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "ux",
+        "severity": 2,
+        "quote": "Наконец получилось импортировать таблицу из Excel, но пришлось читать инструкцию в сторе."
+      },
+      {
+        "category": "billing",
+        "severity": 3,
+        "quote": "без возврата средств за случайно купленный виджет — обидно."
+      }
+    ],
+    "review_date": "2024-11-20"
+  },
+  {
+    "review_id": "R043",
+    "author_name": "Алексей",
+    "rating": 1,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 5,
+        "quote": "Купил подписку на год, но через неделю приложение перестало синхронизироваться."
+      },
+      {
+        "category": "billing",
+        "severity": 5,
+        "quote": "Хочу возврат денег, но они ссылаются на политику, что возврат только в течение 24 часов."
+      },
+      {
+        "category": "ux",
+        "severity": 4,
+        "quote": "Написал в поддержку через сторе — тишина."
+      }
+    ],
+    "review_date": "2025-06-05"
+  },
+  {
+    "review_id": "R044",
+    "author_name": "Ольга",
+    "rating": 3,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 3,
+        "quote": "Импорт из Excel сработал, но не все категории распознал."
+      },
+      {
+        "category": "billing",
+        "severity": 3,
+        "quote": "Поддержка в сторе обещала помочь с возвратом денег за неудачный импорт, но так ничего и не сделали."
+      }
+    ],
+    "review_date": "2026-01-10"
+  },
+  {
+    "review_id": "R045",
+    "author_name": "Дмитрий",
+    "rating": 5,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "feature_request",
+        "severity": 1,
+        "quote": "Потрясающая поддержка! Я случайно заплатил за премиум дважды, написал в сторе, и деньги вернули за два часа."
+      }
+    ],
+    "review_date": "2024-09-13"
+  },
+  {
+    "review_id": "R046",
+    "author_name": "Анна",
+    "rating": 2,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "ux",
+        "severity": 3,
+        "quote": "Очень сложно импортировать данные из Excel — приложение требует строгий формат дат, а у меня был свой."
+      },
+      {
+        "category": "ux",
+        "severity": 2,
+        "quote": "Пробовала писать в поддержку через сторе, они посоветовали переделать таблицу."
+      }
+    ],
+    "review_date": "2025-04-22"
+  },
+  {
+    "review_id": "R047",
+    "author_name": "Сергей",
+    "rating": 4,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "ux",
+        "severity": 2,
+        "quote": "Минус балл за то, что дизайн на некоторых экранах сбивается, когда листаешь."
+      }
+    ],
+    "review_date": "2026-03-01"
+  },
+  {
+    "review_id": "R048",
+    "author_name": "Мария",
+    "rating": 1,
+    "platform": "ios",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 4,
+        "quote": "Приложение виснет при большом файле, потратила час зря."
+      },
+      {
+        "category": "billing",
+        "severity": 5,
+        "quote": "возврат денег не предусмотрен."
+      },
+      {
+        "category": "ux",
+        "severity": 4,
+        "quote": "Поддержка в сторе — это просто ужас. Я писала про ошибку при импорте из Excel, они отвечали раз в три дня и в итоге сказали, что возврат денег не предусмотрен."
+      }
+    ],
+    "review_date": "2025-08-17"
+  },
+  {
+    "review_id": "R049",
+    "author_name": "Павел",
+    "rating": 3,
+    "platform": "rustore",
+    "issues": [
+      {
+        "category": "bug",
+        "severity": 2,
+        "quote": "Импорт из Excel прошел, но пришлось чистить лишние строки."
+      },
+      {
+        "category": "billing",
+        "severity": 2,
+        "quote": "Обратился в поддержку за возвратом части денег, так как обещали полную автоматизацию, а получил ручной труд. В итоге просто предложили скидку на следующий месяц."
+      }
+    ],
+    "review_date": "2024-12-30"
+  },
+  {
+    "review_id": "R050",
+    "author_name": "Наталья",
+    "rating": 5,
+    "platform": "android",
+    "issues": [
+      {
+        "category": "feature_request",
+        "severity": 1,
+        "quote": "Писала в поддержку через сторе про возврат денег за случайную покупку — ответили за час и вернули на карту."
+      }
+    ],
+    "review_date": "2026-02-08"
+  }
+]
