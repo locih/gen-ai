@@ -1,0 +1,372 @@
+{
+  "strategy_a": {
+    "strategy": "a",
+    "mean": 0.9090909090909091,
+    "k": 5,
+    "results": [
+      {
+        "id": 1,
+        "type": "прямой",
+        "question": "Сколько story points команда взяла на тёмную тему в спринте 42?",
+        "score": 1.0,
+        "gold": [
+          "retro_sprint_42"
+        ],
+        "retrieved": [
+          "retro_sprint_42",
+          "retro_sprint_42",
+          "postmortem_sync_jan",
+          "ab_test_premium",
+          "onboarding_funnel"
+        ]
+      },
+      {
+        "id": 2,
+        "type": "синоним",
+        "question": "Как долго приложение запускается на бюджетном Android-холодном старте?",
+        "score": 1.0,
+        "gold": [
+          "perf_audit_android"
+        ],
+        "retrieved": [
+          "research_ads_churn",
+          "adr_sqlite_cache",
+          "perf_audit_android",
+          "onboarding_funnel",
+          "research_ads_churn"
+        ]
+      },
+      {
+        "id": 3,
+        "type": "точный артикул",
+        "question": "Какой код носил A/B-тест цены премиум-подписки?",
+        "score": 1.0,
+        "gold": [
+          "ab_test_premium"
+        ],
+        "retrieved": [
+          "ab_test_premium",
+          "ab_test_premium",
+          "research_ads_churn",
+          "onboarding_funnel",
+          "perf_audit_android"
+        ]
+      },
+      {
+        "id": 4,
+        "type": "multi-hop",
+        "question": "Как реклама связана с оттоком в первую неделю после установки?",
+        "score": 0.5,
+        "gold": [
+          "research_ads_churn",
+          "onboarding_funnel"
+        ],
+        "retrieved": [
+          "research_ads_churn",
+          "research_ads_churn",
+          "support_q1_escalations",
+          "ab_test_premium",
+          "postmortem_sync_jan"
+        ]
+      },
+      {
+        "id": 5,
+        "type": "позитив",
+        "question": "Кого из пользователей поддержка похвалили за быстрый возврат денег?",
+        "score": 1.0,
+        "gold": [
+          "support_q1_escalations"
+        ],
+        "retrieved": [
+          "support_q1_escalations",
+          "ab_test_premium",
+          "support_q1_escalations",
+          "onboarding_funnel",
+          "retro_sprint_42"
+        ]
+      },
+      {
+        "id": 6,
+        "type": "перефраз",
+        "question": "Где на телефоне хранится офлайн-кэш операций?",
+        "score": 1.0,
+        "gold": [
+          "adr_sqlite_cache"
+        ],
+        "retrieved": [
+          "adr_sqlite_cache",
+          "research_ads_churn",
+          "support_q1_escalations",
+          "security_biometrics",
+          "postmortem_sync_jan"
+        ]
+      },
+      {
+        "id": 7,
+        "type": "синоним",
+        "question": "Какой процент пользователей потерял данные в январском сбое синхронизации?",
+        "score": 1.0,
+        "gold": [
+          "postmortem_sync_jan"
+        ],
+        "retrieved": [
+          "postmortem_sync_jan",
+          "postmortem_sync_jan",
+          "adr_sqlite_cache",
+          "ab_test_premium",
+          "support_q1_escalations"
+        ]
+      },
+      {
+        "id": 8,
+        "type": "точный артикул",
+        "question": "Какой формат даты требуется для импорта из Excel?",
+        "score": 1.0,
+        "gold": [
+          "spec_excel_import"
+        ],
+        "retrieved": [
+          "spec_excel_import",
+          "spec_excel_import",
+          "retro_sprint_42",
+          "support_q1_escalations",
+          "retro_sprint_42"
+        ]
+      },
+      {
+        "id": 9,
+        "type": "multi-hop",
+        "question": "Как 152-ФЗ связан с хранением биометрии и локальной базой на устройстве?",
+        "score": 0.5,
+        "gold": [
+          "security_biometrics",
+          "adr_sqlite_cache"
+        ],
+        "retrieved": [
+          "security_biometrics",
+          "security_biometrics",
+          "retro_sprint_42",
+          "onboarding_funnel",
+          "retro_sprint_42"
+        ]
+      },
+      {
+        "id": 10,
+        "type": "прямой",
+        "question": "Какой лимит размера SQLite-базы на устройстве?",
+        "score": 1.0,
+        "gold": [
+          "adr_sqlite_cache"
+        ],
+        "retrieved": [
+          "adr_sqlite_cache",
+          "adr_sqlite_cache",
+          "perf_audit_android",
+          "security_biometrics",
+          "security_biometrics"
+        ]
+      },
+      {
+        "id": 11,
+        "type": "перефраз",
+        "question": "Какие два backend-компонента сломались в январском инциденте синхронизации?",
+        "score": 1.0,
+        "gold": [
+          "postmortem_sync_jan"
+        ],
+        "retrieved": [
+          "postmortem_sync_jan",
+          "postmortem_sync_jan",
+          "adr_sqlite_cache",
+          "ab_test_premium",
+          "adr_sqlite_cache"
+        ]
+      }
+    ]
+  },
+  "strategy_b": {
+    "strategy": "b",
+    "mean": 0.9545454545454546,
+    "k": 5,
+    "results": [
+      {
+        "id": 1,
+        "type": "прямой",
+        "question": "Сколько story points команда взяла на тёмную тему в спринте 42?",
+        "score": 1.0,
+        "gold": [
+          "retro_sprint_42"
+        ],
+        "retrieved": [
+          "retro_sprint_42",
+          "retro_sprint_42",
+          "retro_sprint_42",
+          "retro_sprint_42",
+          "retro_sprint_42"
+        ]
+      },
+      {
+        "id": 2,
+        "type": "синоним",
+        "question": "Как долго приложение запускается на бюджетном Android-холодном старте?",
+        "score": 1.0,
+        "gold": [
+          "perf_audit_android"
+        ],
+        "retrieved": [
+          "research_ads_churn",
+          "ab_test_premium",
+          "perf_audit_android",
+          "research_ads_churn",
+          "perf_audit_android"
+        ]
+      },
+      {
+        "id": 3,
+        "type": "точный артикул",
+        "question": "Какой код носил A/B-тест цены премиум-подписки?",
+        "score": 1.0,
+        "gold": [
+          "ab_test_premium"
+        ],
+        "retrieved": [
+          "ab_test_premium",
+          "ab_test_premium",
+          "ab_test_premium",
+          "ab_test_premium",
+          "ab_test_premium"
+        ]
+      },
+      {
+        "id": 4,
+        "type": "multi-hop",
+        "question": "Как реклама связана с оттоком в первую неделю после установки?",
+        "score": 1.0,
+        "gold": [
+          "research_ads_churn",
+          "onboarding_funnel"
+        ],
+        "retrieved": [
+          "research_ads_churn",
+          "research_ads_churn",
+          "research_ads_churn",
+          "research_ads_churn",
+          "onboarding_funnel"
+        ]
+      },
+      {
+        "id": 5,
+        "type": "позитив",
+        "question": "Кого из пользователей поддержка похвалили за быстрый возврат денег?",
+        "score": 1.0,
+        "gold": [
+          "support_q1_escalations"
+        ],
+        "retrieved": [
+          "onboarding_funnel",
+          "support_q1_escalations",
+          "support_q1_escalations",
+          "onboarding_funnel",
+          "spec_excel_import"
+        ]
+      },
+      {
+        "id": 6,
+        "type": "перефраз",
+        "question": "Где на телефоне хранится офлайн-кэш операций?",
+        "score": 1.0,
+        "gold": [
+          "adr_sqlite_cache"
+        ],
+        "retrieved": [
+          "research_ads_churn",
+          "adr_sqlite_cache",
+          "adr_sqlite_cache",
+          "adr_sqlite_cache",
+          "adr_sqlite_cache"
+        ]
+      },
+      {
+        "id": 7,
+        "type": "синоним",
+        "question": "Какой процент пользователей потерял данные в январском сбое синхронизации?",
+        "score": 1.0,
+        "gold": [
+          "postmortem_sync_jan"
+        ],
+        "retrieved": [
+          "postmortem_sync_jan",
+          "onboarding_funnel",
+          "postmortem_sync_jan",
+          "onboarding_funnel",
+          "ab_test_premium"
+        ]
+      },
+      {
+        "id": 8,
+        "type": "точный артикул",
+        "question": "Какой формат даты требуется для импорта из Excel?",
+        "score": 1.0,
+        "gold": [
+          "spec_excel_import"
+        ],
+        "retrieved": [
+          "spec_excel_import",
+          "spec_excel_import",
+          "spec_excel_import",
+          "spec_excel_import",
+          "spec_excel_import"
+        ]
+      },
+      {
+        "id": 9,
+        "type": "multi-hop",
+        "question": "Как 152-ФЗ связан с хранением биометрии и локальной базой на устройстве?",
+        "score": 0.5,
+        "gold": [
+          "security_biometrics",
+          "adr_sqlite_cache"
+        ],
+        "retrieved": [
+          "security_biometrics",
+          "security_biometrics",
+          "security_biometrics",
+          "security_biometrics",
+          "security_biometrics"
+        ]
+      },
+      {
+        "id": 10,
+        "type": "прямой",
+        "question": "Какой лимит размера SQLite-базы на устройстве?",
+        "score": 1.0,
+        "gold": [
+          "adr_sqlite_cache"
+        ],
+        "retrieved": [
+          "adr_sqlite_cache",
+          "adr_sqlite_cache",
+          "adr_sqlite_cache",
+          "adr_sqlite_cache",
+          "adr_sqlite_cache"
+        ]
+      },
+      {
+        "id": 11,
+        "type": "перефраз",
+        "question": "Какие два backend-компонента сломались в январском инциденте синхронизации?",
+        "score": 1.0,
+        "gold": [
+          "postmortem_sync_jan"
+        ],
+        "retrieved": [
+          "postmortem_sync_jan",
+          "postmortem_sync_jan",
+          "postmortem_sync_jan",
+          "postmortem_sync_jan",
+          "postmortem_sync_jan"
+        ]
+      }
+    ]
+  }
+}

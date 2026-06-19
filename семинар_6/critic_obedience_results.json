@@ -1,0 +1,32 @@
+[
+  {
+    "case": "арифметика без calculate",
+    "false_accepts_t0": 10,
+    "false_accepts_t07": 10,
+    "n": 10
+  },
+  {
+    "case": "выдуманное число",
+    "false_accepts_t0": 10,
+    "false_accepts_t07": 9,
+    "n": 10
+  },
+  {
+    "case": "несогласованные данные",
+    "false_accepts_t0": 10,
+    "false_accepts_t07": 9,
+    "n": 10
+  },
+  {
+    "case": "план не покрывает вопрос",
+    "false_accepts_t0": 0,
+    "false_accepts_t07": 0,
+    "n": 10
+  },
+  {
+    "case": "ответ с ошибкой исполнителя",
+    "false_accepts_t0": 0,
+    "false_accepts_t07": 0,
+    "n": 10
+  }
+]

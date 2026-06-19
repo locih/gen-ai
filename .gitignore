@@ -11,8 +11,6 @@ chroma_a
 chroma_b
 bm25_a.json
 bm25_b.json
-eval_results.json
-trace.jsonl
 # Virtual environments
 .venv
 
