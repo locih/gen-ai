@@ -1,0 +1,1063 @@
+{
+  "summary": {
+    "n": 15,
+    "errors": 0,
+    "elapsed_sec": 1044.8,
+    "avg_sec_per_ticket": 69.7,
+    "category": {
+      "accuracy": 0.6,
+      "ok": 9,
+      "total": 15
+    },
+    "answer": {
+      "judge_enabled": true,
+      "score_mean": 0.5667,
+      "score_pass_rate": 0.6,
+      "steps_supported_rate": 0.9333,
+      "judge_n": 15,
+      "critic_ok_rate": 0.5333,
+      "critic_ok": 8,
+      "critic_n": 15,
+      "critic_reworks_total": 17,
+      "critic_reworks_mean": 1.13,
+      "grounded_ok_rate": 0.5333,
+      "grounded_ok": 8,
+      "ghost_quotes_total": 0
+    },
+    "category_accuracy": 0.6,
+    "category_ok": 9,
+    "ghost_quotes_total": 0,
+    "judge_mean": 0.5667
+  },
+  "results": [
+    {
+      "id": 1,
+      "gold_label_id": 8,
+      "gold_meta": "workplace",
+      "predicted_meta": "workplace",
+      "priority": "low",
+      "category_ok": true,
+      "confidence": 0.85,
+      "ghost_quotes": 0,
+      "critic_ok": true,
+      "critic_reworks": 1,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "rework_x1",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "ticket_examples__42",
+        "ticket_examples__21",
+        "ticket_examples__20",
+        "ticket_examples__37",
+        "ticket_examples__18"
+      ],
+      "summary": "Запрос на подключение компьютера для сотрудника Абрыганова П.С. в боксе 6а, помещение 5, 2-й этаж.",
+      "action_steps": 4,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Проверить полноту данных заявки: ФИО сотрудника (Абрыганов П.С.), место подключения (бокс 6а, помещение 5, 2-й этаж), контактный телефон (8-963-352-18-34) и инициатор (Каменский И.Д., отдел №11, тел. 13-01).",
+          "quote": "Подключить компьютер Григорьева А. С. В 403 кабинете."
+        },
+        {
+          "step": 2,
+          "action": "Зафиксировать обращение как запрос на первичное подключение АРМ/компьютера на рабочем месте (workplace), без сценариев восстановления сети или диагностики отключения.",
+          "quote": "подключение АРМ"
+        },
+        {
+          "step": 3,
+          "action": "Оформить/дополнить заявку с указанием точного адреса подключения и контактов для выезда специалиста.",
+          "quote": "Просьба подключить АРМ в кабинете 315 Беломорская 36Д"
+        },
+        {
+          "step": 4,
+          "action": "Передать заявку в ServiceDesk L2 на выполнение подключения компьютера на указанном рабочем месте.",
+          "quote": null
+        }
+      ],
+      "action_quotes": [
+        "подключение АРМ",
+        "Просьба подключить АРМ в кабинете 315 Беломорская 36Д",
+        "Подключить компьютер Григорьева А. С. В 403 кабинете."
+      ],
+      "action_sources": [
+        "ticket_examples__42",
+        "ticket_examples__37"
+      ],
+      "escalation_team": "ServiceDesk L2",
+      "judge_score": 1.0,
+      "judge_steps_supported": true,
+      "judge_category_correct": true,
+      "judge_comment": "Категория workplace верна, шаги конкретны и согласуются с KB по подключению АРМ на рабочем месте.",
+      "critic_issues": [
+        "Шаг 2 добавляет сценарий восстановления сети, которого нет в тикете — нужно уточнение только по первичному подключению АРМ по KB."
+      ]
+    },
+    {
+      "id": 2,
+      "gold_label_id": 36,
+      "gold_meta": "other",
+      "predicted_meta": "software",
+      "priority": "low",
+      "category_ok": false,
+      "confidence": 0.85,
+      "ghost_quotes": 0,
+      "critic_ok": false,
+      "critic_reworks": 2,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "rework_x2",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "software__1",
+        "software__0",
+        "ticket_examples__27",
+        "ticket_examples__6",
+        "ticket_examples__22"
+      ],
+      "summary": "Консультация: пользователь просит указать ответственных за отчёт «Проекты для удаления из СПС» в АС Договор и контакты д",
+      "action_steps": 4,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Уточнить у заявителя точное наименование отчёта и путь в АС Договор: «Отчеты — Производство — Ведение Сводного плана — Проекты для удаления из СПС», а также суть запроса по удалению проектов с СПС по ИЧ.",
+          "quote": "Уточнить название ПО, версию, ОС, текст ошибки и скриншот."
+        },
+        {
+          "step": 2,
+          "action": "Выяснить, что именно требуется: контакт ответственного за отчёт, проверка корректности данных или консультация по бизнес-процессу удаления проектов из СПС.",
+          "quote": null
+        },
+        {
+          "step": 3,
+          "action": "Зафиксировать в тикете системы АС Договор и СПС, ФИО и контакты заявителя, а также собранное описание запроса.",
+          "quote": "Установка ПО, TrueConf, CryptoPro, САПР, модули согласования, АС Договор."
+        },
+        {
+          "step": 4,
+          "action": "Эскалировать тикет на ServiceDesk L2 для определения ответственного за отчёт и контакта для проверки корректности, так как в KB нет владельцев конкретных отчётов АС Договор.",
+          "quote": null
+        }
+      ],
+      "action_quotes": [
+        "Уточнить название ПО, версию, ОС, текст ошибки и скриншот.",
+        "Установка ПО, TrueConf, CryptoPro, САПР, модули согласования, АС Договор."
+      ],
+      "action_sources": [
+        "software__1",
+        "software__0"
+      ],
+      "escalation_team": "ServiceDesk L2",
+      "judge_score": 0.0,
+      "judge_steps_supported": false,
+      "judge_category_correct": false,
+      "judge_comment": "Неверная категория (other, не software): применён общий runbook по ПО с нерелевантными цитатами про установку и скриншот ошибки вместо консультации по ответственным за отчёт.",
+      "critic_issues": [
+        "План применяет общий runbook по ошибкам/установке ПО вместо консультации об ответственных за отчёт АС Договор.",
+        "Цитаты и шаги из KB про ошибки БД/АС Договор не применимы к консультации об ответственных за отчёт",
+        "Шаги и цитаты из KB про версию/ОС/скриншот и установку ПО не подходят к консультации об ответственных за отчёт; путь отчёта уже указан в тикете."
+      ]
+    },
+    {
+      "id": 3,
+      "gold_label_id": 12,
+      "gold_meta": "access",
+      "predicted_meta": "access",
+      "priority": "high",
+      "category_ok": true,
+      "confidence": 0.92,
+      "ghost_quotes": 0,
+      "critic_ok": true,
+      "critic_reworks": 0,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "ticket_examples__1",
+        "ticket_examples__9",
+        "ticket_examples__5",
+        "ticket_examples__2",
+        "ticket_examples__8"
+      ],
+      "summary": "Пользователь не может войти в систему из-за проблем с доступом.",
+      "action_steps": 5,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Уточнить у пользователя, в какую систему не удаётся войти (почта, SmartStaff, ЕПС, Sisco и т.д.), а также логин/ФИО сотрудника.",
+          "quote": "не может зайти в свою учетную запись"
+        },
+        {
+          "step": 2,
+          "action": "Определить тип проблемы по симптомам: заблокированная учётная запись, забытый/истёкший пароль или пароль не был выдан.",
+          "quote": "заблокировалась учетка. Просьба разблокировать"
+        },
+        {
+          "step": 3,
+          "action": "Если у сотрудника нет почтового ящика в домене mggt.ru — направить запрос ответственному за получение паролей (Обухов Владимир Владимирович) для SmartStaff и учёток в ЕПС.",
+          "quote": "Ответственный за получение паролей: Обухов Владимир Владимирович"
+        },
+        {
+          "step": 4,
+          "action": "При необходимости восстановления или разблокировки учётной записи оформить запрос по шаблону: «Прошу восстановить пароль для логина ниже» или «Прошу разблокировать данные учетные записи».",
+          "quote": "Прошу восстановить пароль для логина ниже"
+        },
+        {
+          "step": 5,
+          "action": "Если проблема не решается на L1 или требуется вмешательство администратора — эскалировать в ServiceDesk L2 с указанием системы, логина и выполненных проверок.",
+          "quote": null
+        }
+      ],
+      "action_quotes": [
+        "не может зайти в свою учетную запись",
+        "заблокировалась учетка. Просьба разблокировать",
+        "Прошу восстановить пароль для логина ниже"
+      ],
+      "action_sources": [
+        "ticket_examples__1",
+        "ticket_examples__2",
+        "ticket_examples__8",
+        "ticket_examples__9"
+      ],
+      "escalation_team": "ServiceDesk L2",
+      "judge_score": 1.0,
+      "judge_steps_supported": true,
+      "judge_category_correct": true,
+      "judge_comment": "Категория access верна, шаги конкретны и подтверждены фрагментами KB по входу, разблокировке и выдаче паролей."
+    },
+    {
+      "id": 4,
+      "gold_label_id": 13,
+      "gold_meta": "access",
+      "predicted_meta": "access",
+      "priority": "medium",
+      "category_ok": true,
+      "confidence": 0.85,
+      "ghost_quotes": 0,
+      "critic_ok": true,
+      "critic_reworks": 0,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "ticket_examples__14",
+        "ticket_examples__4",
+        "ticket_examples__15",
+        "email__0",
+        "account__1"
+      ],
+      "summary": "Запрос на обновление пароля почтового ящика SY@str.mos.ru из-за просроченного срока смены пароля.",
+      "action_steps": 4,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Проверить статус сотрудника Zaseva (активен / уволен / перевод) по учётной записи SY@str.mos.ru.",
+          "quote": "Проверить статус сотрудника (активен/уволен/ перевод)."
+        },
+        {
+          "step": 2,
+          "action": "Проверить блокировку учётной записи в AD для SY@str.mos.ru.",
+          "quote": "Для восстановления: проверить блокировку AD, инициировать сброс пароля через IDM/ServiceDesk."
+        },
+        {
+          "step": 3,
+          "action": "Инициировать сброс пароля через IDM/ServiceDesk для SY@str.mos.ru (причина: просроченное обновление пароля).",
+          "quote": "Для восстановления: проверить блокировку AD, инициировать сброс пароля через IDM/ServiceDesk."
+        },
+        {
+          "step": 4,
+          "action": "Сообщить пользователю, что новый пароль будет передан только через защищённый канал; не сообщать пароль по телефону.",
+          "quote": "Никогда не сообщать пароль по телефону — только через защищённый канал."
+        }
+      ],
+      "action_quotes": [
+        "Для восстановления: проверить блокировку AD, инициировать сброс пароля через IDM/ServiceDesk.",
+        "Никогда не сообщать пароль по телефону — только через защищённый канал.",
+        "ЕПС (str.mos.ru), Outlook, переполненный ящик, ошибки отправки, мобильная почта."
+      ],
+      "action_sources": [
+        "account__1",
+        "email__0"
+      ],
+      "escalation_team": "IAM / AD",
+      "judge_score": 1.0,
+      "judge_steps_supported": true,
+      "judge_category_correct": true,
+      "judge_comment": "Категория access верна, шаги по сбросу пароля через IDM/ServiceDesk и проверке AD полностью соответствуют runbook account__1."
+    },
+    {
+      "id": 5,
+      "gold_label_id": 1,
+      "gold_meta": "hardware",
+      "predicted_meta": "hardware",
+      "priority": "low",
+      "category_ok": true,
+      "confidence": 0.85,
+      "ghost_quotes": 0,
+      "critic_ok": false,
+      "critic_reworks": 2,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "rework_x2",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "ticket_examples__17",
+        "hardware__1",
+        "hardware__0",
+        "ticket_examples__20",
+        "ticket_examples__28"
+      ],
+      "summary": "Запрос пурпурного бокового картриджа для МФУ WC 6515.",
+      "action_steps": 3,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Зафиксировать инвентарный номер МФУ и адрес кабинета заявителя.",
+          "quote": "Зафиксировать инвентарный номер и адрес кабинета."
+        },
+        {
+          "step": 2,
+          "action": "Проверить на МФУ уровень тонера и зафиксировать результат в тикете.",
+          "quote": "Для принтера: проверить очередь печати, статус «Offline», замятие, уровень тонера."
+        },
+        {
+          "step": 3,
+          "action": "Эскалировать заявку в ServiceDesk L2 для обеспечения картриджем.",
+          "quote": null
+        }
+      ],
+      "action_quotes": [
+        "Зафиксировать инвентарный номер и адрес кабинета.",
+        "Для принтера: проверить очередь печати, статус «Offline», замятие, уровень тонера.",
+        "принтеры/МФУ, картриджи"
+      ],
+      "action_sources": [
+        "hardware__1",
+        "hardware__0"
+      ],
+      "escalation_team": "ServiceDesk L2",
+      "judge_score": 0.5,
+      "judge_steps_supported": true,
+      "judge_category_correct": true,
+      "judge_comment": "Категория hardware верна, шаги опираются на KB, но это общий runbook по принтеру без учёта запроса на выдачу конкретного картриджа.",
+      "critic_issues": [
+        "Шаг 3 — диагностика неисправности принтера, а не запрос картриджа; цитата шага 4 — только охват runbook, не процедура эскалации.",
+        "Шаг 1 избыточен — детали уже в тикете, в KB нет такого шага; шаг 3 не опирается на инструкцию KB (цитата только из «Охват»).",
+        "Шаг 2 — диагностика неисправности вместо заказа пурпурного картриджа по заявке."
+      ]
+    },
+    {
+      "id": 6,
+      "gold_label_id": 3,
+      "gold_meta": "email",
+      "predicted_meta": "email",
+      "priority": "low",
+      "category_ok": true,
+      "confidence": 0.92,
+      "ghost_quotes": 0,
+      "critic_ok": false,
+      "critic_reworks": 2,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "rework_x2",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "ticket_examples__40",
+        "ticket_examples__30",
+        "ticket_examples__11",
+        "ticket_examples__15",
+        "ticket_examples__25"
+      ],
+      "summary": "Запрос на настройку почты МГГТ в помещении 302 (1-й отдел, Лавочкина, 23А).",
+      "action_steps": 4,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Зафиксировать в тикете параметры заявки: система «Почта МГГТ», локация Лавочкина, 23А, пом. 302, Первый отдел.",
+          "quote": null
+        },
+        {
+          "step": 2,
+          "action": "Уточнить у заявителя: какие учётные записи или рабочие места нужно настроить, есть ли уже доступ к единой почтовой системе (ЕПС).",
+          "quote": "После входа в единая почтовая система"
+        },
+        {
+          "step": 3,
+          "action": "Запросить у заявителя список активных учётных записей ЕПС для Первого отдела, если настройка требует привязки к существующим учётным записям.",
+          "quote": "Первый отдел направляет списки активных учетных записей ЕПС"
+        },
+        {
+          "step": 4,
+          "action": "Эскалировать тикет в ServiceDesk L2: в KB нет процедуры настройки «Почта МГГТ», передать собранные данные (локация, отдел, список учётных записей).",
+          "quote": null
+        }
+      ],
+      "action_quotes": [
+        "## Электронная почта (email)",
+        "После входа в единая почтовая система",
+        "Первый отдел направляет списки активных учетных записей ЕПС"
+      ],
+      "action_sources": [
+        "ticket_examples__11",
+        "ticket_examples__15",
+        "ticket_examples__25"
+      ],
+      "escalation_team": "ServiceDesk L2",
+      "judge_score": 1.0,
+      "judge_steps_supported": true,
+      "judge_category_correct": true,
+      "judge_comment": "Категория email верна, шаги опираются на KB по ЕПС и корректно эскалируют при отсутствии процедуры настройки Почты МГГТ.",
+      "critic_issues": [
+        "Шаги про ЕПС/Outlook и служебную записку не соответствуют запросу на настройку Почты МГГТ в пом. 302",
+        "Шаг 2 и цитаты (телефон, серверное помещение) взяты из нерелевантных тикетов, а не из процедур KB по настройке «Почта МГГТ».",
+        "Шаги 2–3 опираются на цитаты KB про сбои ЕПС и списки учёток, а не на настройку «Почта МГГТ» в пом. 302 по тикету."
+      ]
+    },
+    {
+      "id": 7,
+      "gold_label_id": 3,
+      "gold_meta": "email",
+      "predicted_meta": "email",
+      "priority": "medium",
+      "category_ok": true,
+      "confidence": 0.65,
+      "ghost_quotes": 0,
+      "critic_ok": true,
+      "critic_reworks": 0,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "ticket_examples__24",
+        "ticket_examples__11",
+        "ticket_examples__12",
+        "ticket_examples__15",
+        "ticket_examples__7"
+      ],
+      "summary": "Обращение по корпоративной почте домена mggt.ru без уточнения характера проблемы.",
+      "action_steps": 4,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Уточнить у пользователя суть проблемы с почтой mggt.ru: вход, отправка, получение, отсутствие папок/писем или другое.",
+          "quote": "проблемы с почтой . при отправке возникают разного рода ошибки"
+        },
+        {
+          "step": 2,
+          "action": "При ошибках отправки запросить точный текст ошибки, время возникновения и пример адреса получателя (внутренняя или внешняя почта).",
+          "quote": "пыталась направить по внутренней почте"
+        },
+        {
+          "step": 3,
+          "action": "Если после входа в почтовую систему сессия обрывается или не видны папки с письмами — зафиксировать логин, клиент (Outlook/веб) и когда проблема началась.",
+          "quote": "После входа в единая почтовая система ( NosovDA@str.mos.ru ) выбрасывает из почты."
+        },
+        {
+          "step": 4,
+          "action": "Проверить базовые действия: перезапуск почтового клиента, повторный вход; если не помогло — эскалировать в ServiceDesk L2 с собранными данными.",
+          "quote": "Регулярно возникает такая ошибка. Сложно отправлять письма."
+        }
+      ],
+      "action_quotes": [
+        "проблемы с почтой . при отправке возникают разного рода ошибки",
+        "После входа в единая почтовая система ( NosovDA@str.mos.ru ) выбрасывает из почты.",
+        "проблемы с отправкой писем с почты стр.мос.ру. Регулярно возникает такая ошибка. Сложно отправлять письма. !"
+      ],
+      "action_sources": [
+        "ticket_examples__11",
+        "ticket_examples__12",
+        "ticket_examples__15"
+      ],
+      "escalation_team": "ServiceDesk L2",
+      "judge_score": 1.0,
+      "judge_steps_supported": true,
+      "judge_category_correct": true,
+      "judge_comment": "Категория email верна, шаги конкретны и опираются на типовые сценарии из KB по почте mggt.ru."
+    },
+    {
+      "id": 8,
+      "gold_label_id": 8,
+      "gold_meta": "workplace",
+      "predicted_meta": "software",
+      "priority": "high",
+      "category_ok": false,
+      "confidence": 0.93,
+      "ghost_quotes": 0,
+      "critic_ok": true,
+      "critic_reworks": 1,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "rework_x1",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "ticket_examples__22",
+        "software__2",
+        "access__3",
+        "software__0",
+        "ticket_examples__38"
+      ],
+      "summary": "Раздел «Документы» в АС договор зависает, из-за чего невозможно сформировать акт, заключение или решение о приостановке.",
+      "action_steps": 4,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Зарегистрировать инцидент по системе «АС договор» с приоритетом high: зависание в разделе «Документы», невозможность сформировать акт, заключение и решение о приостановке.",
+          "quote": null
+        },
+        {
+          "step": 2,
+          "action": "Эскалировать заявку в группу «Прикладные системы» как ответственную за АС Договор.",
+          "quote": "Группа «Прикладные системы» — 1С, АС Договор, САПР"
+        },
+        {
+          "step": 3,
+          "action": "В комментарии к эскалации указать симптом из аналогичного обращения: «при запросе АС договор не отвечает и висит» — для ускорения диагностики.",
+          "quote": "при запросе АС договор не отвечает и висит"
+        },
+        {
+          "step": 4,
+          "action": "Уведомить пользователя, что обращение передано в «Прикладные системы» для устранения зависания АС Договор.",
+          "quote": null
+        }
+      ],
+      "action_quotes": [
+        "Группа «Прикладные системы» — 1С, АС Договор, САПР",
+        "при запросе АС договор не отвечает и висит",
+        "Установка ПО, TrueConf, CryptoPro, САПР, модули согласования, АС Договор"
+      ],
+      "action_sources": [
+        "software__2",
+        "software__0",
+        "ticket_examples__38",
+        "ticket_examples__22"
+      ],
+      "escalation_team": "Группа «Прикладные системы»",
+      "judge_score": 0.0,
+      "judge_steps_supported": true,
+      "judge_category_correct": false,
+      "judge_comment": "Категория software не совпадает с эталоном workplace, хотя шаги эскалации в «Прикладные системы» подтверждены KB.",
+      "critic_issues": [
+        "Шаг 1 просит уточнить уже полностью описанные в тикете детали, шаг 2 не задаёт конкретного действия после сопоставления с KB."
+      ]
+    },
+    {
+      "id": 9,
+      "gold_label_id": 13,
+      "gold_meta": "access",
+      "predicted_meta": "access",
+      "priority": "low",
+      "category_ok": true,
+      "confidence": 0.85,
+      "ghost_quotes": 0,
+      "critic_ok": false,
+      "critic_reworks": 2,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "rework_x2",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "ticket_examples__2",
+        "ticket_examples__5",
+        "ticket_examples__14",
+        "ticket_examples__10",
+        "ticket_examples__4"
+      ],
+      "summary": "Требуется сменить пароль внешней почты, так как он был задан с использованием русских символов.",
+      "action_steps": 4,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Уточнить у заявителя адрес внешней почты и подтвердить, что пароль был введён в русской раскладке и вход не выполняется.",
+          "quote": null
+        },
+        {
+          "step": 2,
+          "action": "Проверить, относится ли пользователь к сотрудникам без почтового ящика в домене mggt.ru (внешняя почта).",
+          "quote": "Список сотрудников не имеющих почтовый ящик в домене mggt.ru"
+        },
+        {
+          "step": 3,
+          "action": "Передать заявку ответственному за получение паролей — Обухову Владимиру Владимировичу — для перевыпуска пароля для входа во внешнюю почту.",
+          "quote": "Ответственный за получение паролей: Обухов Владимир Владимирович"
+        },
+        {
+          "step": 4,
+          "action": "После получения нового пароля передать его пользователю и проверить успешный вход во внешнюю почту.",
+          "quote": "пароль для входа в почту выдан не был"
+        }
+      ],
+      "action_quotes": [
+        "Ответственный за получение паролей: Обухов Владимир Владимирович",
+        "пароль для входа в почту выдан не был",
+        "Список сотрудников не имеющих почтовый ящик в домене mggt.ru"
+      ],
+      "action_sources": [
+        "ticket_examples__2",
+        "ticket_examples__5"
+      ],
+      "escalation_team": "Обухов Владимир Владимирович",
+      "judge_score": 1.0,
+      "judge_steps_supported": true,
+      "judge_category_correct": true,
+      "judge_comment": "Категория access верна, шаги конкретны и подтверждаются KB по внешней почте и ответственному за пароли.",
+      "critic_issues": [
+        "План описывает выдачу/восстановление пароля и проверку списка без ящика mggt.ru, а не смену пароля из‑за ввода на русской раскладке; шаг 4 не соответствует тикету.",
+        "Шаг 2 и quote «восстановить пароль» относятся к str.mos.ru, а не к смене пароля внешней почты из тикета",
+        "Шаг 4: цитата про невыданный пароль не относится к проверке входа после перевыпуска и не соответствует тикету о русской раскладке"
+      ]
+    },
+    {
+      "id": 10,
+      "gold_label_id": 8,
+      "gold_meta": "workplace",
+      "predicted_meta": "workplace",
+      "priority": "low",
+      "category_ok": true,
+      "confidence": 0.88,
+      "ghost_quotes": 0,
+      "critic_ok": true,
+      "critic_reworks": 0,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "ticket_examples__37",
+        "ticket_examples__20",
+        "ticket_examples__42",
+        "ticket_examples__29",
+        "request__0"
+      ],
+      "summary": "Запрос на подключение компьютера к рабочему месту или корпоративной инфраструктуре.",
+      "action_steps": 4,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Уточнить у заявителя цель подключения компьютера (новое АРМ, после переезда, повторное подключение к сети) и желаемый срок выполнения.",
+          "quote": "Уточнить цель запроса и срок."
+        },
+        {
+          "step": 2,
+          "action": "Запросить ФИО сотрудника и место подключения: номер кабинета и адрес (по аналогии с заявками на подключение АРМ).",
+          "quote": "Подключить компьютер Григорьева А. С. В 403 кабинете."
+        },
+        {
+          "step": 3,
+          "action": "Проверить в каталоге ServiceDesk наличие типовой услуги на подключение/настройку АРМ и оформить заявку по найденному шаблону.",
+          "quote": "Проверить, есть ли типовая услуга в каталоге ServiceDesk."
+        },
+        {
+          "step": 4,
+          "action": "Если требуется новое оборудование или замена — указать модель, количество, обоснование и согласование руководителя в заявке.",
+          "quote": "Для оборудования: указать модель, количество, обоснование, согласование руководителя."
+        }
+      ],
+      "action_quotes": [
+        "Уточнить цель запроса и срок.",
+        "Проверить, есть ли типовая услуга в каталоге ServiceDesk.",
+        "Подключить компьютер Григорьева А. С. В 403 кабинете."
+      ],
+      "action_sources": [
+        "request__0",
+        "ticket_examples__42"
+      ],
+      "escalation_team": "ServiceDesk L2",
+      "judge_score": 1.0,
+      "judge_steps_supported": true,
+      "judge_category_correct": true,
+      "judge_comment": "Категория workplace верна, шаги соответствуют runbook и примерам подключения АРМ в KB."
+    },
+    {
+      "id": 11,
+      "gold_label_id": 28,
+      "gold_meta": "request",
+      "predicted_meta": "hardware",
+      "priority": "medium",
+      "category_ok": false,
+      "confidence": 0.95,
+      "ghost_quotes": 0,
+      "critic_ok": false,
+      "critic_reworks": 2,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "rework_x2",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "ticket_examples__18",
+        "ticket_examples__21",
+        "ticket_examples__20",
+        "ticket_examples__17",
+        "ticket_examples__42"
+      ],
+      "summary": "Запрос на замену мыши и клавиатуры из-за залипания колёсика мыши и клавиши «пробел» на компьютере с серийным номером 713",
+      "action_steps": 3,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Уточнить у пользователя детали: залипание колёсика мыши, залипание клавиши «пробел», серийный номер компьютера 7139, место выдачи оборудования.",
+          "quote": null
+        },
+        {
+          "step": 2,
+          "action": "Оформить замену компьютерной мыши: при неисправности выдать новую мышь (при наличии — беспроводную).",
+          "quote": "Прошу выдать новую мышь (если есть возможность беспроводную)."
+        },
+        {
+          "step": 3,
+          "action": "Запрос на замену клавиатуры эскалировать в ServiceDesk L2: в доступном контексте KB есть только процедура замены мыши, процедура замены клавиатуры не описана.",
+          "quote": null
+        }
+      ],
+      "action_quotes": [
+        "В связи с неисправностью компьютерной мыши",
+        "Прошу выдать новую мышь (если есть возможность беспроводную).",
+        "## Оборудование (hardware)"
+      ],
+      "action_sources": [
+        "ticket_examples__18",
+        "ticket_examples__17"
+      ],
+      "escalation_team": "ServiceDesk L2",
+      "judge_score": 0.0,
+      "judge_steps_supported": true,
+      "judge_category_correct": false,
+      "judge_comment": "meta_category должна быть request, а не hardware; шаги по замене мыши подтверждены KB, эскалация клавиатуры в L2 обоснована.",
+      "critic_issues": [
+        "В quote шага 2 указано ФИО из примера KB (Придворовой), а не данные текущего заявителя.",
+        "Шаги по замене клавиатуры не опираются на KB — в фрагментах только процедура замены мыши",
+        "Шаг 1 просит уточнить уже указанные в тикете симптомы и серийный номер 7139; цитата «## Оборудование (hardware)» — заголовок раздела, а не процедура из KB."
+      ]
+    },
+    {
+      "id": 12,
+      "gold_label_id": 11,
+      "gold_meta": "account",
+      "predicted_meta": "access",
+      "priority": "medium",
+      "category_ok": false,
+      "confidence": 0.85,
+      "ghost_quotes": 0,
+      "critic_ok": true,
+      "critic_reworks": 1,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "rework_x1",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "ticket_examples__1",
+        "ticket_examples__8",
+        "account__0",
+        "ticket_examples__25",
+        "ticket_examples__6"
+      ],
+      "summary": "Запрос на разблокировку учетных записей пользователей.",
+      "action_steps": 4,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Уточнить у инициатора ФИО сотрудника, логин и систему учётной записи, которую нужно разблокировать (по аналогии с тикетами на разблокировку учётных записей).",
+          "quote": "Разблокировка учетных записей. Можете, пожалуйста, разблокировать учетную запись Луниной Анны Александровны."
+        },
+        {
+          "step": 2,
+          "action": "Проверить, что запрос относится к охвату runbook «Учётные записи»: создание/блокировка учётных записей или восстановление доступа.",
+          "quote": "Создание/блокировка учётных записей, восстановление доступа новых сотрудников."
+        },
+        {
+          "step": 3,
+          "action": "Если учётная запись относится к SmartStaff или ЕПС для сотрудника без почтового ящика в домене mggt.ru — направить к ответственному отдела №2 за получение паролей.",
+          "quote": "Назначение ответственного за получение паролей для работников, не имеющих почтовых ящиков в домене mggt.ru. Для SmartStaff и учеток в ЕПС"
+        },
+        {
+          "step": 4,
+          "action": "Эскалировать на ServiceDesk L2 с собранными ФИО, логином и системой: в runbook «Учётные записи» нет пошаговой процедуры разблокировки.",
+          "quote": null
+        }
+      ],
+      "action_quotes": [
+        "Разблокировка учетных записей",
+        "Создание/блокировка учётных записей, восстановление доступа новых сотрудников.",
+        "Назначение ответственного за получение паролей для работников, не имеющих почтовых ящиков в домене mggt.ru. Для SmartStaff и учеток в ЕПС"
+      ],
+      "action_sources": [
+        "account__0",
+        "ticket_examples__8",
+        "ticket_examples__1"
+      ],
+      "escalation_team": "ServiceDesk L2",
+      "judge_score": 0.0,
+      "judge_steps_supported": true,
+      "judge_category_correct": false,
+      "judge_comment": "Тикет ошибочно классифицирован как access вместо gold-категории account, хотя шаги соответствуют runbook «Учётные записи».",
+      "critic_issues": [
+        "Шаг 3 слишком общий: в KB runbook только «Охват», без конкретных процедур разблокировки"
+      ]
+    },
+    {
+      "id": 13,
+      "gold_label_id": 36,
+      "gold_meta": "other",
+      "predicted_meta": "incident",
+      "priority": "medium",
+      "category_ok": false,
+      "confidence": 0.85,
+      "ghost_quotes": 0,
+      "critic_ok": true,
+      "critic_reworks": 0,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "incident__1",
+        "incident__0",
+        "ticket_examples__26",
+        "ticket_examples__19",
+        "access__0"
+      ],
+      "summary": "Зафиксирован сбой в работе системы МГГТ Интегратор.",
+      "action_steps": 4,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Зафиксировать время начала сбоя МГГТ Интегратор и масштаб: один пользователь, отдел или все пользователи.",
+          "quote": "Зафиксировать время начала, масштаб (один пользователь / отдел / все)."
+        },
+        {
+          "step": 2,
+          "action": "Проверить статус на странице инцидентов или в канале ops — нет ли уже зарегистрированного сбоя по системе.",
+          "quote": "Проверить статус на странице инцидентов / канале ops."
+        },
+        {
+          "step": 3,
+          "action": "При массовом сбое немедленно эскалировать на Дежурного L2 / Incident Manager, не пытаться устранять проблему локально.",
+          "quote": "Если массовый — эскалировать немедленно, не пытаться «лечить» локально."
+        },
+        {
+          "step": 4,
+          "action": "Сообщить пользователю номер инцидента и ожидаемое время следующего обновления.",
+          "quote": "Сообщить пользователю номер инцидента и ожидаемое время обновления."
+        }
+      ],
+      "action_quotes": [
+        "Зафиксировать время начала, масштаб (один пользователь / отдел / все).",
+        "Если массовый — эскалировать немедленно, не пытаться «лечить» локально.",
+        "Дежурный L2 / Incident Manager — немедленно."
+      ],
+      "action_sources": [
+        "incident__0",
+        "incident__1"
+      ],
+      "escalation_team": "Дежурный L2 / Incident Manager",
+      "judge_score": 0.0,
+      "judge_steps_supported": true,
+      "judge_category_correct": false,
+      "judge_comment": "Категория incident не совпадает с gold other, хотя шаги корректно взяты из runbook инцидентов."
+    },
+    {
+      "id": 14,
+      "gold_label_id": 17,
+      "gold_meta": "access",
+      "predicted_meta": "access",
+      "priority": "low",
+      "category_ok": true,
+      "confidence": 0.95,
+      "ghost_quotes": 0,
+      "critic_ok": false,
+      "critic_reworks": 2,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "rework_x2",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "ticket_examples__1",
+        "software__1",
+        "ticket_examples__7",
+        "ticket_examples__9",
+        "ticket_examples__20"
+      ],
+      "summary": "Запрос на предоставление прав редактирования к сетевой папке X:\\Otdel3\\FIELD\\ЛГР для сотрудника Кривцовой В.Э. (таб. №27",
+      "action_steps": 4,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Зафиксировать в заявке параметры доступа: сетевая папка X:\\Otdel3\\FIELD\\ЛГР, уровень «редактирование», сотрудник Кривцова В.Э. (таб.№273), отдел №3.",
+          "quote": null
+        },
+        {
+          "step": 2,
+          "action": "Уточнить у заявителя основание для предоставления доступа (служебная записка, согласование руководителя отдела).",
+          "quote": null
+        },
+        {
+          "step": 3,
+          "action": "Направить собранную информацию по заявке ответственному от отдела №3 — Пышкину Киркору Владимировичу (kkruglov@MGGT.RU) на почту.",
+          "quote": "Просьба направить необходимую информацию указанному сотруднику на почту."
+        },
+        {
+          "step": 4,
+          "action": "Эскалировать заявку на ServiceDesk L2 для назначения прав на сетевую папку — в переданном контексте KB нет процедуры выдачи доступа к сетевым ресурсам.",
+          "quote": null
+        }
+      ],
+      "action_quotes": [
+        "ответственным от отдела № 3 назначен Пышкин Киркор Владимирович",
+        "Просьба направить необходимую информацию указанному сотруднику на почту.",
+        "№ В - АУП - 11225/22 от 29.08.2022"
+      ],
+      "action_sources": [
+        "ticket_examples__7"
+      ],
+      "escalation_team": "ServiceDesk L2",
+      "judge_score": 1.0,
+      "judge_steps_supported": true,
+      "judge_category_correct": true,
+      "judge_comment": "Категория access верна; шаги конкретны, согласование с ответственным отдела №3 из KB и эскалация на L2 при отсутствии процедуры выдачи прав логичны.",
+      "critic_issues": [
+        "Шаг 2 некорректно применяет KB о контактном лице отдела №3 к согласованию доступа к сетевой папке; остальные шаги не опираются на KB по access.",
+        "Шаги не опираются на KB: ticket_examples__1 про пароли отдела №2, не про сетевые папки; quote — только заголовок категории, не процедура.",
+        "Шаг 2 (основание/согласование) не из KB; шаг 3 неверно применяет контакт отдела №3 к выдаче прав на сетевую папку вместо эскалации L2 по access."
+      ]
+    },
+    {
+      "id": 15,
+      "gold_label_id": 36,
+      "gold_meta": "other",
+      "predicted_meta": "access",
+      "priority": "low",
+      "category_ok": false,
+      "confidence": 0.85,
+      "ghost_quotes": 0,
+      "critic_ok": false,
+      "critic_reworks": 2,
+      "tools_used": [
+        "classify",
+        "search_kb",
+        "critic",
+        "rework_x2",
+        "generate_action",
+        "judge"
+      ],
+      "steps": 3,
+      "retrieved": [
+        "ticket_examples__1",
+        "ticket_examples__15",
+        "ticket_examples__27",
+        "ticket_examples__2",
+        "ticket_examples__14"
+      ],
+      "summary": "Назначение ответственного за получение паролей в единой почтовой системе для сотрудников б/о «Искра» — Алымова Галина Ни",
+      "action_steps": 4,
+      "suggested_steps": [
+        {
+          "step": 1,
+          "action": "Принять заявку: назначение ответственного за получение паролей в единой почтовой системе (ЕПС) для работников Б/О «Искра».",
+          "quote": "Назначение ответственного за получение паролей для работников, не имеющих почтовых ящиков в домене mggt.ru. Для SmartStaff и учеток в ЕПС"
+        },
+        {
+          "step": 2,
+          "action": "Зафиксировать в тикете ответственного: Алымова Галина Никolaevna (Б/О «Искра»).",
+          "quote": "Ответственный от отдела №11 за получение паролей для работников, не имеющих почтовых ящиков в домене mggt.ru."
+        },
+        {
+          "step": 3,
+          "action": "Передать заявку на регистрацию/обновление ответственного за получение паролей для учёток ЕПС (работники без почтовых ящиков в домене mggt.ru).",
+          "quote": "Назначение ответственного за получение паролей для работников, не имеющих почтовых ящиков в домене mggt.ru."
+        },
+        {
+          "step": 4,
+          "action": "После выполнения — уведомить заявителя о назначении ответственного и закрыть тикет.",
+          "quote": "Прошу направить информацию в кротчайшее время"
+        }
+      ],
+      "action_quotes": [
+        "Назначение ответственного за получение паролей для работников, не имеющих почтовых ящиков в домене mggt.ru. Для SmartStaff и учеток в ЕПС",
+        "Ответственный от отдела №11 за получение паролей для работников, не имеющих почтовых ящиков в домене mggt.ru.",
+        "Прошу направить информацию в кротчайшее время"
+      ],
+      "action_sources": [
+        "ticket_examples__1",
+        "ticket_examples__27"
+      ],
+      "escalation_team": "ServiceDesk L2",
+      "judge_score": 0.0,
+      "judge_steps_supported": true,
+      "judge_category_correct": false,
+      "judge_comment": "Категория должна быть other (административное назначение ответственного), а не access, хотя шаги соответствуют KB.",
+      "critic_issues": [
+        "В шаге 2 quote — Обухов из другого кейса (ticket_examples__2), а не шаблон назначения ответственного от подразделения из ticket_examples__27 под тикет про Алымову.",
+        "Шаг 3 не соответствует тикету: заявка только о назначении ответственного, список сотрудников не требуется",
+        "Цитата шага 2 про отдел №11 не соответствует тикету Б/О «Искра»"
+      ]
+    }
+  ]
+}
